@@ -38,6 +38,8 @@ Link to python3: https://www.python.org/downloads/
     python3 main.py
 
 ### N.B Important
+MAKE SURE TO ADD DOMAIN NAMES INTO THE doms.txt FILE
 This supports Python 3.6 and above. Have not yet tested for 2 though.
 
 Any wrong doing or anything anyone has done illegally and this tool was usd by them, I am not to be held accountable for an damages to property or company integrety. This is simply a test tool nothing more.
+
