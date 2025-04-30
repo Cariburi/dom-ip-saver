@@ -28,6 +28,7 @@
 #### Windows
 #### Setup and stuff needed
 Link to git: https://git-scm.com/downloads/win
+
 Link to python3: https://www.python.org/downloads/
 
 #### Whem done with first step or already installed what is needed
@@ -37,6 +38,6 @@ Link to python3: https://www.python.org/downloads/
     python3 main.py
 
 ### N.B Important
-Thsi supports Python 3.6 and above. Have not yet tested for 2 though.
+This supports Python 3.6 and above. Have not yet tested for 2 though.
 
-Any wrong doing or anything anyone has done illegally and this tool was usd by them, I am not to be held accountable for an damages to property or company integrety. This is imply a test tool nothing more.
+Any wrong doing or anything anyone has done illegally and this tool was usd by them, I am not to be held accountable for an damages to property or company integrety. This is simply a test tool nothing more.
