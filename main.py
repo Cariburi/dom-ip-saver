@@ -1,6 +1,7 @@
 import socket as s
 from colorama import Fore
 import subprocess as sub
+import argparse as a
 
 ll: list[str] = []
 blue = Fore.BLUE
@@ -43,9 +44,14 @@ def Conc(file_name: str):
     return None
 
 if __name__ == "__main__":
+    parser = a.ArgumentParser()
+    subparser = parser.add_subparsers(dest="command")
+
+    functions = subparser.add_argument("run", description="Run program")
     try:
         print("PRESS CTRL+C to exit\n")
 
+        # arg for file with domain IP's and output file
         inp = input(Fore.YELLOW + "[?]Enter file name for Gestting Domain IPs: " + Fore.RESET)
         Conc(inp)
 
