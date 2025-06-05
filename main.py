@@ -48,22 +48,20 @@ if __name__ == "__main__":
     subparser = parser.add_subparsers(dest="command")
 
     functions = subparser.add_argument("run", description="Run program")
+    functions.add_argument("--input_file")
+    functions.add_argument("--output_file")
+    functions.add_argument("--nmap_scan", type=bool)
+    args = parser.parse_args()
     try:
         print("PRESS CTRL+C to exit\n")
 
         # arg for file with domain IP's and output file
-        inp = input(Fore.YELLOW + "[?]Enter file name for Gestting Domain IPs: " + Fore.RESET)
-        Conc(inp)
-
-        inp = input(Fore.YELLOW + "\n[?]Enter file name for To store IPs: " + Fore.RESET)
-        writeToFile(inp)
-
-        nmap_q = input("Would you like an automatic nmap scan on each ip(Y or N): ").lower()
-        if nmap_q == "y" or nmap_q == "yes":
-            nmap_scan(file=inp)
-
-        elif nmap_q == "n" or nmap_q == "no":
-            print(Fore.LIGHTCYAN_EX + "\nALR..}EXITING{..ALR" + Fore.RESET)
-
+        if args.command == "run":
+            Conc(args.input_file)
+            writeToFile(args.output_file)
+            if args.nmap_scan == True:
+                nmap_scan(file=inp)
+                print(Fore.LIGHTCYAN_EX + "\nALR..}EXITING{..ALR" + Fore.RESET)
+                
     except KeyboardInterrupt:
         print(blue + "\nPRESSED CTRL C..._EXITING_...C LRTC DESSERP" + Fore.RESET)
