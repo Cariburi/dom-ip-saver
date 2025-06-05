@@ -11,7 +11,7 @@
     git clone https://github.com/Cariburi/dom-ip-saver
     cd dom-ip-saver
     pip install requirements.txt
-    python3 main.py
+    python3 main.py run --input_file [file] --output [True or False] --output_file [file] --nmap_scan [True or False]
 
 ### Kali Linux or Debian based Distros
 #### Setup and stuff needed
@@ -23,7 +23,7 @@
     git clone https://github.com/Cariburi/dom-ip-saver
     cd dom-ip-saver
     pip install requirements.txt
-    python3 main.py
+    python3 main.py run --input_file [file] --output [True or False] --output_file [file] --nmap_scan [True or False]
 
 #### Windows
 #### Setup and stuff needed
@@ -35,7 +35,7 @@ Link to python3: https://www.python.org/downloads/
     git clone https://github.com/Cariburi/dom-ip-saver
     cd dom-ip-saver
     pip install requirements.txt
-    python3 main.py
+    python3 main.py run --input_file [file] --output [True or False] --output_file [file] --nmap_scan [True or False]
 
 ### N.B Important
 MAKE SURE TO ADD DOMAIN NAMES INTO THE doms.txt FILE
